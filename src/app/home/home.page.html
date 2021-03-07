@@ -1,34 +1,19 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title >
-      Login
-    </ion-title>
+
+    <ion-title>Login</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large" align="center">Login</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <ion-card>
-    <ion-item>
-      <img src="" />
-    </ion-item>
+<ion-content>
 
-  </ion-card>
+      <img src="https://sv1.picz.in.th/images/2021/03/07/D7OSNW.md.png" />
 
-<ion-card>
-  <ion-item>
-    <ion-label position="stacked">ID :</ion-label>
-    <ion-input placeholder="placeholder"type="text" [(ngModel)]="this.getid"></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label position="stacked">Password :</ion-label>
-    <ion-input placeholder="placeholder" type="password"[(ngModel)]="this.getpass"></ion-input>
-  </ion-item>
-
+<ion-card color="transparent">
+  <ion-toolbar color="transparent">
+<ion-button expand="clear"  color="success" slot="end" (click)="signin()">Sign In</ion-button>
+<ion-button expand="clear"   color="danger" slot="start" (click)="signup()">Sign Up</ion-button>
+  </ion-toolbar>
 </ion-card>
-<ion-button expand="full" color="success"><h5>Login</h5></ion-button>
+
 </ion-content>
